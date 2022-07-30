@@ -1,1 +1,1 @@
-type First<T> = T extends [infer A, ...infer B] ? A : unknown;
+type First<T> = T extends [infer A, ...infer B] ? A : never;
