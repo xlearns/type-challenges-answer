@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "create":"sh  script/challenges.sh"
+     "create":"sh  script/challenges.sh",
+     "git":"sh script/git.sh"
   },
   "repository": {
     "type": "git",
