@@ -11,4 +11,5 @@ type FunctionParamsType = MyParameters<typeof foo>; // [arg1: string, arg2: numb
       typeof与接口结合使用，可以获取接口的属性和方法
       typeof与泛型结合使用，可以获取泛型的属性和方法
       typeof与类型别名结合使用，可以获取类型别名的属性和方法
-*/
+      https://www.typescriptlang.org/play?#code/MYewdgzgLgBAsgTwIICcUEMEwLwwNoBQMMA3jGOgLYCmAXDAERIA2AlsNQwDQzoDmdGAEYArDAC+XIqXJVBDAEIgARt14D6AJgDMEqcTIUa9BgFEAbpx79B2gBx6CAXQDcBAqEix0OYjKPyLOxW6oKiEu5QCAAO1DBQsLhRsSAAZrxuBMlxUNTQvtlp8MhomHhgAK6UytQoru5ZMXEACrUQ4AVNRYioGAjlVTV1bgD0I34AegD8jbEwSAKdKek9pf2V1bVOeAw2DPVjkzOHAPIos3EL1Jq+rSjtYDt7B+PE00A
+      */
