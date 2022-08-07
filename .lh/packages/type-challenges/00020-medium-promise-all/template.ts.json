@@ -1,0 +1,74 @@
+{
+    "sourceFile": "packages/type-challenges/00020-medium-promise-all/template.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1659886557577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659886566047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<>():any\n\\ No newline at end of file\n+declare function PromiseAll<any>():any\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659886581965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<any>():any\n\\ No newline at end of file\n+declare function PromiseAll<T extends []>():any\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659886694177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends []>():any\n\\ No newline at end of file\n+declare function PromiseAll<T extends []>(value):any\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659886715113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends []>(value):any\n\\ No newline at end of file\n+declare function PromiseAll<T extends []>(value:[...T]):any\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659886800392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends []>(value:[...T]):any\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:[...T]):any\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659886852757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends unknown[]>(value:[...T]):any\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:[...T]):1\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659887051943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends unknown[]>(value:[...T]):1\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):1\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659887550839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):1\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<T>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659887588872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<T>\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<[name:1]>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659887600662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<[name:1]>\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<{name:1}>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659888028553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<{name:1}>\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659888119106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<>\n\\ No newline at end of file\n+declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<{\n+    \n+}>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659888150103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<{\n-    \n+   [k in keyof T]: T[k]\n }>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659888184172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n declare function PromiseAll<T extends unknown[]>(value:readonly [...T]):Promise<{\n-   [k in keyof T]: T[k]\n+   [k in keyof T]: T[k] extends Promise<infer U> ? U : T[k]\n }>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1659886557577,
+            "name": "Commit-0",
+            "content": "declare function PromiseAll<>():any"
+        }
+    ]
+}

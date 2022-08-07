@@ -1,0 +1,26 @@
+{
+    "sourceFile": "packages/type-challenges/00016-medium-pop/template.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1659886067590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659886097764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-type Pop<T> = any\n\\ No newline at end of file\n+type Pop<T extends any[]> =  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659886144429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-type Pop<T extends any[]> =  \n\\ No newline at end of file\n+type Pop<T extends any[]> = T extends [...infer A,infer B]?[...A]:never \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1659886067590,
+            "name": "Commit-0",
+            "content": "type Pop<T> = any"
+        }
+    ]
+}

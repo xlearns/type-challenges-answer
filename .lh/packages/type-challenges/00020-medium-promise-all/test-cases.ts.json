@@ -1,0 +1,18 @@
+{
+    "sourceFile": "packages/type-challenges/00020-medium-promise-all/test-cases.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1659886244976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1659886244976,
+            "name": "Commit-0",
+            "content": "import type { Equal, Expect } from '@type-challenges/utils'\nconst promise1 = Promise.resolve(3);\nconst promise2 = 42;\nconst promise3 = new Promise<string>((resolve, reject) => {\n  setTimeout(resolve, 100, 'foo');\n});\n\n// expected to be `Promise<[number, 42, string]>`\nconst p = PromiseAll([promise1, promise2, promise3] as const)"
+        }
+    ]
+}
