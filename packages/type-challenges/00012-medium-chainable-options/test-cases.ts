@@ -3,7 +3,7 @@ import type { Alike, Expect } from '@type-challenges/utils'
 declare const a: Chainable
 
 const test = a.option('t',1).option('t1',1).get()
-const t = typeof test;
+type TT = typeof test;
 
 const result1 = a
   .option('foo', 123)

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1659796700965,
@@ -44,6 +44,10 @@
                 {
                     "date": 1659800551093,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import type { Alike, Expect } from '@type-challenges/utils'\n \n declare const a: Chainable\n \n-const test = a.option('t',1).option('t1',1)\n+const test = a.option('t',1).option('t1',1).get()\n const t = typeof test;\n \n const result1 = a\n   .option('foo', 123)\n"
+                },
+                {
+                    "date": 1659882561705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n declare const a: Chainable\n \n const test = a.option('t',1).option('t1',1).get()\n-const t = typeof test;\n+type TT = typeof test;\n \n const result1 = a\n   .option('foo', 123)\n   .option('bar', { value: 'Hello World' })\n"
                 }
             ],
             "date": 1659796700965,

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "packages/type-challenges/00015-medium-last/template.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1659882569929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1659882677939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-type Last<T> = any\n\\ No newline at end of file\n+type Last<T> = T\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1659882736426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-type Last<T> = T\n\\ No newline at end of file\n+type Last<T> = T extends [...infer A,infer B] ? B : never\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1659882569929,
+            "name": "Commit-0",
+            "content": "type Last<T> = any"
+        }
+    ]
+}

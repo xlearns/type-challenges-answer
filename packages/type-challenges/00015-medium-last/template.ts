@@ -1,0 +1,1 @@
+type Last<T> = T extends [...infer A,infer B] ? B : never
