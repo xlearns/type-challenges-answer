@@ -1,5 +1,5 @@
 {
-  "name": "every-gymnastics",
+  "name": "type-challenges-answer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xlearns/every-gymnastics.git"
+    "url": "git+https://github.com/xlearns/type-challenges-answer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xlearns/every-gymnastics/issues"
+    "url": "https://github.com/xlearns/type-challenges-answer/issues"
   },
-  "homepage": "https://github.com/xlearns/every-gymnastics#readme",
+  "homepage": "https://github.com/xlearns/type-challenges-answer#readme",
   "dependencies": {
     "@type-challenges/utils": "^0.1.1"
   }
