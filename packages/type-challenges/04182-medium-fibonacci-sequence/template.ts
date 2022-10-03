@@ -13,6 +13,8 @@ type unshift<T> = T extends [infer A, ...infer B] ? [...B] : [];
 //     : []
 //   : never;
 
+//N 递归次数
+
 type Fibonacci<
   T extends number,
   N extends number[] = [1],
